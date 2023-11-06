@@ -1,12 +1,12 @@
 <Project>
 	<PropertyGroup>
 		<isWindows>false</isWindows>
-		<isWindows Condition="'$(OS)' == 'Windows_NT' or $(RuntimeIdentifier.StartsWith('win'))">true</isWindows>
+		<isWindows Condition="$(RuntimeIdentifier.StartsWith(win)) or ($(RuntimeIdentifier) == '' and '$(OS)' == Windows_NT)">true</isWindows>
 		<!--Note: Dotnet currently does not allow to build on non-windows platforms when a windows TFM is specified-->
 		<TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
 		<TargetFrameworks Condition="$(isWindows)">netstandard2.0;netcoreapp3.1;net6.0-windows10.0.17763.0</TargetFrameworks>
+		<EnableWindowsTargeting>true</EnableWindowsTargeting>
 		<Nullable>enable</Nullable>
 		<LangVersion>8.0</LangVersion>
-		<EnableWindowsTargeting>true</EnableWindowsTargeting>
 	</PropertyGroup>
 </Project>
