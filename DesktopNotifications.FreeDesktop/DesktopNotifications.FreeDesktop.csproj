@@ -1,10 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Description>A cross-platform C# library for native desktop "toast" notifications.</Description>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/pr8x/DesktopNotifications</PackageProjectUrl>
 	</PropertyGroup>
 
 	<ItemGroup>

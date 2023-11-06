@@ -8,5 +8,8 @@
 		<EnableWindowsTargeting>true</EnableWindowsTargeting>
 		<Nullable>enable</Nullable>
 		<LangVersion>8.0</LangVersion>
+		<Description>A cross-platform C# library for native desktop "toast" notifications.</Description>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/pr8x/DesktopNotifications</PackageProjectUrl>
 	</PropertyGroup>
 </Project>
